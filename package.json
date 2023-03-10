@@ -1,6 +1,28 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "node": "^19.6.1"
-  }
+    "node": "^19.6.1",
+    "pg": "^8.10.0"
+  },
+  "name": "tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacquesvida12/Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacquesvida12/Tracker/issues"
+  },
+  "homepage": "https://github.com/jacquesvida12/Tracker#readme",
+  "description": ""
 }
