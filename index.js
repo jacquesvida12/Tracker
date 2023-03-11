@@ -105,6 +105,27 @@ app.post("/create", (req, res) => {
     });
   });
 
+
+// GET /delete/5
+app.get("/delete/:id", (req, res) => {
+  const id = req.params.id;
+  const sql = "SELECT * FROM CALORIES WHERE cal_id = $1";
+  pool.query(sql, [id], (err, result) => {
+    // if (err) ...
+    res.render("delete", { model: result.rows[0] });
+  });
+});
+
+// POST /delete/5
+app.post("/delete/:id", (req, res) => {
+  const id = req.params.id;
+  const sql = "DELETE FROM CALORIES WHERE cal_id = $1";
+  pool.query(sql, [id], (err, result) => {
+    // if (err) ...
+    res.redirect("/");
+  });
+});
+
 //Start listener
 app.listen(process.env.PORT || 3000, () => {
     console.log("The Server has now started at (http://localhost:3000/")
