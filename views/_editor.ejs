@@ -1,0 +1,62 @@
+<div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Name">Name</label>
+    <div class="col-sm-7">
+      <input autofocus class="form-control" name="Name" value="<%= model.cal_name %>" />
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Meal">Meal</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Meal" value="<%= model.cal_meal %>" />
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Protien">Protein</label>
+    <div class="col-sm-7">
+        <input class="form-control" name="Protein" value="<%= model.cal_protein %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Carbs">Carbs</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Carbs" value="<%= model.cal_carbs %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Fats">Fats</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Fats" value="<%= model.cal_fats %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Calories">Calories</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Calories" value="<%= model.cal_calories %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Date">Date</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Date" value="<%= model.cal_date %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Time">Time</label>
+    <div class="col-sm-7"> 
+      <input class="form-control" name="Time" value="<%= model.cal_time %>" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-sm-2" for="Notes">Notes</label>
+    <div class="col-sm-7"> 
+    <textarea class="form-control" name="Notes" maxlength="32000" rows="7"><%= model.cal_notes %></textarea>
+    </div>
+  </div>
